@@ -1,9 +1,9 @@
 <!--conexion a la base de datos-->
 <?php
-   const SERVE="";
-   const DB="";
-   const USER="";
-   const PASS="";
+   const SERVE="localhost";
+   const DB="biblioteca";
+   const USER="root";
+   const PASS="acceso02";
 
    const SGBD="mysql:host=".SERVER.";dbname=".DB;
    

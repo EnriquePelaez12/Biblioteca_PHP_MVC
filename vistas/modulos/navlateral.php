@@ -18,7 +18,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="my-account.html" title="Mi cuenta">
+						<a href="<?php echo SERVERURL;?>/myaccount" title="Mi cuenta">
 							<i class="zmdi zmdi-settings"></i>
 						</a>
 					</li>
@@ -32,7 +32,7 @@
 			<!-- SideBar Menu -->
 			<ul class="list-unstyled full-box dashboard-sideBar-Menu">
 				<li>
-					<a href="home.html">
+					<a href="<?php echo SERVERURL;?>/home">
 						<i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i> Dashboard
 					</a>
 				</li>
@@ -42,16 +42,16 @@
 					</a>
 					<ul class="list-unstyled full-box">
 						<li>
-							<a href="company.html"><i class="zmdi zmdi-balance zmdi-hc-fw"></i> Empresa</a>
+							<a href="<?php echo SERVERURL;?>/company"><i class="zmdi zmdi-balance zmdi-hc-fw"></i> Empresa</a>
 						</li>
 						<li>
-							<a href="category.html"><i class="zmdi zmdi-labels zmdi-hc-fw"></i> Categorías</a>
+							<a href="<?php echo SERVERURL;?>/category"><i class="zmdi zmdi-labels zmdi-hc-fw"></i> Categorías</a>
 						</li>
 						<li>
-							<a href="provider.html"><i class="zmdi zmdi-truck zmdi-hc-fw"></i> Proveedores</a>
+							<a href="<?php echo SERVERURL;?>/provider"><i class="zmdi zmdi-truck zmdi-hc-fw"></i> Proveedores</a>
 						</li>
 						<li>
-							<a href="book.html"><i class="zmdi zmdi-book zmdi-hc-fw"></i> Nuevo libro</a>
+							<a href="<?php echo SERVERURL;?>/book"><i class="zmdi zmdi-book zmdi-hc-fw"></i> Nuevo libro</a>
 						</li>
 					</ul>
 				</li>
@@ -61,15 +61,15 @@
 					</a>
 					<ul class="list-unstyled full-box">
 						<li>
-							<a href="admin.html"><i class="zmdi zmdi-account zmdi-hc-fw"></i> Administradores</a>
+							<a href="<?php echo SERVERURL;?>/admin"><i class="zmdi zmdi-account zmdi-hc-fw"></i> Administradores</a>
 						</li>
 						<li>
-							<a href="client.html"><i class="zmdi zmdi-male-female zmdi-hc-fw"></i> Clientes</a>
+							<a href="<?php echo SERVERURL;?>/client"><i class="zmdi zmdi-male-female zmdi-hc-fw"></i> Clientes</a>
 						</li>
 					</ul>
 				</li>
 				<li>
-					<a href="catalog.html">
+					<a href="<?php echo SERVERURL;?>/catalog">
 						<i class="zmdi zmdi-book-image zmdi-hc-fw"></i> Catalogo
 					</a>
 				</li>
