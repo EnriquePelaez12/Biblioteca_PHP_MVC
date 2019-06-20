@@ -5,7 +5,8 @@
 	<title><?php echo COMPANY;?></title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link rel="stylesheet" href="<?php echo SERVERURL;?>/vistas/css/main.css">
+	<link rel="stylesheet" href="<?php echo SERVERURL;?>vistas/css/main.css">
+	
 </head>
 <body>
 <!-- se manda ayamar el metod para protejer la ruta-->
@@ -41,6 +42,7 @@ require_once "./controladores/vistasControlador.php";
 
 <?php endif; ?>
 	<!--====== Scripts -->
+	
 	<?php include "vistas/modulos/script.php";?>
 
 </body>

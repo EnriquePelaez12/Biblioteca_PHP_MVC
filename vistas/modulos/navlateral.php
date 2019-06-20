@@ -8,17 +8,17 @@
 			<!-- SideBar User info -->
 			<div class="full-box dashboard-sideBar-UserInfo">
 				<figure class="full-box">
-					<img src="<?php echo SERVERURL;?>/vistas/assets/avatars/AdminMaleAvatar.png" alt="UserIcon">
+					<img src="<?php echo SERVERURL;?>vistas/assets/avatars/AdminMaleAvatar.png" alt="UserIcon">
 					<figcaption class="text-center text-titles">User Name</figcaption>
 				</figure>
 				<ul class="full-box list-unstyled text-center">
 					<li>
-						<a href="<?php echo SERVERURL; ?>/mydata/" title="Mis datos">
+						<a href="<?php echo SERVERURL; ?>mydata/" title="Mis datos">
 							<i class="zmdi zmdi-account-circle"></i>
 						</a>
 					</li>
 					<li>
-						<a href="<?php echo SERVERURL;?>/myaccount" title="Mi cuenta">
+						<a href="<?php echo SERVERURL;?>myaccount" title="Mi cuenta">
 							<i class="zmdi zmdi-settings"></i>
 						</a>
 					</li>
@@ -32,7 +32,7 @@
 			<!-- SideBar Menu -->
 			<ul class="list-unstyled full-box dashboard-sideBar-Menu">
 				<li>
-					<a href="<?php echo SERVERURL;?>/home">
+					<a href="<?php echo SERVERURL;?>home">
 						<i class="zmdi zmdi-view-dashboard zmdi-hc-fw"></i> Dashboard
 					</a>
 				</li>
@@ -42,16 +42,16 @@
 					</a>
 					<ul class="list-unstyled full-box">
 						<li>
-							<a href="<?php echo SERVERURL;?>/company"><i class="zmdi zmdi-balance zmdi-hc-fw"></i> Empresa</a>
+							<a href="<?php echo SERVERURL;?>company"><i class="zmdi zmdi-balance zmdi-hc-fw"></i> Empresa</a>
 						</li>
 						<li>
-							<a href="<?php echo SERVERURL;?>/category"><i class="zmdi zmdi-labels zmdi-hc-fw"></i> Categorías</a>
+							<a href="<?php echo SERVERURL;?>category"><i class="zmdi zmdi-labels zmdi-hc-fw"></i> Categorías</a>
 						</li>
 						<li>
-							<a href="<?php echo SERVERURL;?>/provider"><i class="zmdi zmdi-truck zmdi-hc-fw"></i> Proveedores</a>
+							<a href="<?php echo SERVERURL;?>provider"><i class="zmdi zmdi-truck zmdi-hc-fw"></i> Proveedores</a>
 						</li>
 						<li>
-							<a href="<?php echo SERVERURL;?>/book"><i class="zmdi zmdi-book zmdi-hc-fw"></i> Nuevo libro</a>
+							<a href="<?php echo SERVERURL;?>book"><i class="zmdi zmdi-book zmdi-hc-fw"></i> Nuevo libro</a>
 						</li>
 					</ul>
 				</li>
@@ -61,15 +61,15 @@
 					</a>
 					<ul class="list-unstyled full-box">
 						<li>
-							<a href="<?php echo SERVERURL;?>/admin"><i class="zmdi zmdi-account zmdi-hc-fw"></i> Administradores</a>
+							<a href="<?php echo SERVERURL;?>admin"><i class="zmdi zmdi-account zmdi-hc-fw"></i> Administradores</a>
 						</li>
 						<li>
-							<a href="<?php echo SERVERURL;?>/client"><i class="zmdi zmdi-male-female zmdi-hc-fw"></i> Clientes</a>
+							<a href="<?php echo SERVERURL;?>client"><i class="zmdi zmdi-male-female zmdi-hc-fw"></i> Clientes</a>
 						</li>
 					</ul>
 				</li>
 				<li>
-					<a href="<?php echo SERVERURL;?>/catalog">
+					<a href="<?php echo SERVERURL;?>catalog">
 						<i class="zmdi zmdi-book-image zmdi-hc-fw"></i> Catalogo
 					</a>
 				</li>

@@ -8,7 +8,7 @@ if ( $peticionAjax) {
      class mainModel{
           //metodo para hacer la conexion
           protected function conectar(){
-               $enlace = new PDO(SGBD, USER,PASS);
+               $enlace = new PDO(DSN,USERNAME,PASSWORD);
                return $enlace;
           }
 
@@ -16,6 +16,32 @@ if ( $peticionAjax) {
               $respuesta= self::conectar()->prepare($consulta);
               $respuesta->execute();
               return $respuesta;
+         }
+         //Para agregar una cuenta
+         protected function agregar_cuenta($datos){
+              $sql=self::conectar()->prepare("INSERT INTO cuenta(CuentaCodigo, CuentaPrivilegio, CuentaUsuario,
+              CuentaClave, CuentaEmail, CuentaEstado, CuentaTipo, CuentaGenero, CuentaFoto) 
+              VALUES(:Codigo,:Privilegio,:Usuario,:Clave,:Email,:Estado,:Tipo,:Genero,:Foto)");
+              $sql->bindParam(":Codigo", $datos['Codigo']);
+              $sql->bindParam(":Privilegio", $datos['Privilegio']);
+              $sql->bindParam(":Usuario", $datos['Usuario']);
+              $sql->bindParam(":Clave", $datos['Clave']);
+              $sql->bindParam(":Email", $datos['Email']);
+              $sql->bindParam(":Estado", $datos['Estado']);
+              $sql->bindParam(":Tipo", $datos['Tipo']);
+              $sql->bindParam(":Genero", $datos['Genero']);
+              $sql->bindParam(":Foto", $datos['Foto']);
+              $sql->execute();
+              return $sql;
+         }
+
+         //Metodo para Eliminar una cuenta
+         protected function eliminar_cuenta(){
+              $sql=self::conectar()->prepare("DELETE FROM cuenta WHERE
+              CuentaCodigo=:Codigo");
+              $sql->bindParam(":Codigo",$codigo);
+              $sql->execute();
+              return $sql;
          }
 
          //para encriptar contraseña
@@ -72,7 +98,7 @@ if ( $peticionAjax) {
                $alerta="
                <script>
 
-               Swal.fire(
+               swal(
                     '".$datos['Titulo']."',
                     '".$datos['Texto']."',
                     '".$datos['Tipo']."'
@@ -84,7 +110,7 @@ if ( $peticionAjax) {
           }elseif($datos['Alerta']=="recargar"){
                $alerta="
                <script>
-               Swal.fire({
+               swal({
                     title: '".$datos['Titulo']."',
                     text:  '".$datos['Texto']."',
                     type:   '".$datos['Tipo']."',
@@ -99,7 +125,7 @@ if ( $peticionAjax) {
           }elseif($datos['Alerta']=="limpiar"){
                $alerta="
                <script>
-               Swal.fire({
+               swal({
                     title: '".$datos['Titulo']."',
                     text:  '".$datos['Texto']."',
                     type:   '".$datos['Tipo']."',

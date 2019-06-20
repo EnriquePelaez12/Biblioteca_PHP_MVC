@@ -1,8 +1,8 @@
 <?php
-//clase para protejer las rutas
+//clase para protejer las rutas y que no se vea la extencion .php
 class vistasModelo {
     protected function obtener_vistas_modelo($vistas){
-        $listaBlanca=["adminlist", "adminseach", "admin", "bookconfig", "bookinfo", "book",
+        $listaBlanca=["adminlist", "adminsearch", "admin", "bookconfig", "bookinfo", "book",
         "catalog", "categorylist", "category", "clientlist", "clientsearch", "client", "companylist",
         "company", "home", "login", "myaccount", "mydata", "providerlist", "provider", "search"];
         if (in_array($vistas,   $listaBlanca)) {
